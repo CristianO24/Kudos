@@ -1,6 +1,7 @@
  body {
         margin: 0px;
-        background-color: #8F57FD;
+        /*background-color: #8F57FD;*/
+        background: rgb(34,193,195);
         font-family: 'Josefin Sans', sans-serif;      
 }
 .header{
@@ -85,7 +86,6 @@
     outline: none;
 }
 
-::placeholder
-{
+::placeholder{
     color: white;
 }
