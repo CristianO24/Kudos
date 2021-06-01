@@ -9,11 +9,12 @@ body {
   padding: 30px;
   position: relative;
   Overflow-x: hidden;
+  
 }
 
 .carousel__container {
   white-space: nowrap;
-  margin: 70px 0px;
+  margin: 75px 0px;
   padding-bottom: 10px;
 }
 
