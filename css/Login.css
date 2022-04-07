@@ -7,7 +7,8 @@
 body {
   margin: 0px;
   font-family: "Josefin Sans", sans-serif;
-  background: linear-gradient(#051937, #174558, #4c7173, #8b9e93);
+  background: rgb(201, 90, 17);
+  /*background: linear-gradient(176deg, rgba(2,0,36,1) 0%, rgba(251,99,1,1) 0%, rgba(255,255,255,1) 100%);  */
 }
 
 .header {
@@ -17,9 +18,9 @@ body {
 }
 
 .header__img {
-  width: 200px;
-  margin-top: 10px;
-  margin-left: 10px;
+  width: 80px;
+  margin-top: 40px;
+  margin-left: 40px;
 }
 
 .login {
