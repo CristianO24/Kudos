@@ -1,2 +1,2 @@
-# CrisVideo
-Repositorio creado para desarrollar el curso de Fronted Developer
+# Kudos
+Repositorio creado para materia electiva 2
