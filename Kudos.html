@@ -7,16 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="css/inicio.css" rel="stylesheet">
-    <title>Zwift</title>
+    <title>Registrar Actividad</title>
 </head>
 <body>
     <header class="header">
         <a href="./Inicio.html"> <img class="header__img" src="https://i.ibb.co/q0tkpvh/Logo.png" alt="logo"></a>
         <section class="header__">
             <div class="header__menu">
-            <div class="header_menu--profile">                  
+            <div class="header_menu--profile">
                 <img src="https://i.ibb.co/hKRyhGf/icons8-men-48.png" alt="icons8-men-48">
-            </div>
+            </div>  
             <ul>
                 <li><a href="./Inicio.html">Cuenta</a></li>
                 <li><a href="./Actividad.html">Registrar Actividad</a></li>
@@ -26,16 +26,29 @@
         </section>
     </header>
     <section class="login">
-        <section class="login__container">       
-            <iframe width="400" height="315" src="https://www.youtube.com/embed/LBXnYW6yX_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3>Zwift es un programa de entrenamiento físico de ciclismo y carrera en línea multijugador masivo donde te permitara entrenar y competir en un mundo virtual, a la vez que vas ganando Kudos</h3>
-            <a class="button" href="https://www.zwift.com/eu-es/sign-in?redirect_uri=%2Feu-es%2Ffeed%3Fauth_redirect%3Dtrue">Conecta con Zwift</a>        
+        <section class="login__container">
+            <h3>Cuantos Kudos quieres canjear?</h3>
+            <h3>Tienes 5000</h3>
+            <input class="input" type="number" placeholder="Ingresa los kudos..." id="kudos">
+            <img src="https://i.ibb.co/BP86TB8/icons8-derecha-64.png" alt="icons8-derecha-64" border="0">
+            <div class="resultado_hadle"></div>            
+            <button class="button" onclick="Kudos()">Convertir Kudos</button>
+            
         </section>
-</section> 
+    </section> 
     <footer class="footer">
         <a href="">Terminos de uso</a>
         <a href="">Declaracion de privacidad</a>
         <a href="">Centro de ayuda</a>
     </footer>
+    <script>
+         function Kudos(){
+                var kudos = document.getElementById("kudos");
+                const result = document.querySelector(".resultado_hadle");
+                var value = kudos.value;
+                value = value/10
+                result.innerHTML = `Se han convertido en: ${value} Handles`;           
+          }
+    </script>
 </body>
 </html>
